@@ -1,0 +1,427 @@
+/*【完成】ナビ付きヘッダー*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 10px;
+  background-color: #fff;
+  color: black;
+}
+.header-ttl {
+  padding-bottom: 1%;
+  font-size: 20px;
+  width: 120px;
+}
+.header-nav-list {
+  font-size: 15px;
+  display: flex;
+  color: rgb(119, 117, 117);
+  list-style: none;
+}
+.header-nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*【完成】メインページ-*/
+.main-box {
+  position: relative;
+  padding: 0%;
+}
+.firstview_img {
+  margin: 0 0 0 auto;
+  display: block;
+  width: 65%;
+}
+.main-message {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  font-size: 70px;
+  font-family: "Indie Flower", cursive;
+  color: rgb(223, 75, 100);
+}
+.main-message span {
+  color: rgb(16, 238, 219);
+}
+.sub-message1 {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  font-size: 20px;
+  color: rgb(223, 75, 100);
+}
+.sub-message1 span {
+  color: rgb(16, 238, 219);
+}
+.sub-message2 {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  font-size: 10px;
+  color: rgb(119, 117, 117);
+}
+
+/*【完成】新着情報（リスト）*/
+.news-small-box {
+  padding: 3% 25%;
+}
+.news-title {
+  color: rgb(109, 106, 106);
+}
+.news-title span {
+  font-family: "Indie Flower", cursive;
+  color: rgb(223, 75, 100);
+}
+.news-list {
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+dl {
+  display: flex;
+  padding: 0.5%;
+  border-bottom: 1px solid #ccc;
+}
+dt {
+  float: left;
+  padding: 0 3% 0 0;
+}
+dd {
+  display: contents;
+}
+dd a {
+  padding: 0 0 0 3%;
+}
+.news-button {
+  width: 60px;
+  padding: 0 3%;
+  font-size: 15px;
+  color: white;
+  border-radius: 50px;
+  background-color: rgb(223, 75, 100);
+  text-align: center;
+}
+
+/*【完成】メイン２*/
+.about-box {
+  padding: 3% 0;
+}
+.about-small-box {
+  position: relative;
+  padding: 10% 10%;
+  background-color: rgb(221, 219, 219);
+}
+.about-title {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  color: rgb(109, 106, 106);
+}
+.about-title span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  padding: 0%;
+  font-family: "Indie Flower", cursive;
+  color: rgb(223, 75, 100);
+}
+.about-contents {
+  position: relative;
+  padding: 3%;
+  display: flex;
+}
+.about-contents img {
+  position: absolute;
+  width: 40%;
+  right: 3%;
+}
+
+/*【完成】サービス内容（グリッドレイアウト）*/
+.grid {
+  display: grid;
+  grid-template-rows: 250px 250px;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-title {
+  font-family: "Indie Flower", cursive;
+  color: rgb(223, 75, 100);
+  padding: 3% 15%;
+}
+.grid-title span {
+  color: rgb(109, 106, 106);
+  font-weight: bold;
+}
+.container1 {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: rgb(223, 75, 100);
+}
+.container1 span {
+  position: absolute;
+  bottom: 20%;
+  color: white;
+  text-align: center;
+}
+.container1 span p {
+  margin: 0 15%;
+}
+.container1 img {
+  position: absolute;
+  width: 30%;
+  top: 10%;
+  left: 35%;
+}
+.container2 {
+  position: relative;
+  display: flex;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: rgb(206, 101, 119);
+}
+.container2 span {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  color: white;
+}
+.container2 img {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 30%;
+}
+.container3 {
+  position: relative;
+  display: flex;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: rgb(187, 125, 136);
+}
+.container3 span {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  color: white;
+}
+.container3 img {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 30%;
+}
+
+/*ブログ（複数カード）*/
+.wrapper-box {
+  background-color: rgb(221, 219, 219);
+}
+.wrapper-title {
+  padding: 3% 15% 0 15%;
+  font-family: "Indie Flower", cursive;
+  color: rgb(223, 75, 100);
+}
+.wrapper-title span {
+  color: rgb(109, 106, 106);
+  font-weight: bold;
+}
+.wrapper-contents {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 15% 0 15%;
+}
+.blog-category {
+  position: absolute;
+  padding: 0.4% 1%;
+  background-color: rgb(223, 75, 100);
+  color: white;
+  border-radius: 10px 0 0 0;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+.card {
+  width: 30%;
+  cursor: pointer;
+  border: 1px solid #e9eaea;
+  border-radius: 10px;
+}
+.text-box {
+  padding: 2%;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+}
+.text-box h6 {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.date {
+  display: inline-block;
+  font-size: 10px;
+  margin-top: 5px;
+  color: rgb(109, 106, 106);
+}
+.tag-area {
+  padding: 0 3%;
+}
+.tag {
+  display: inline-block;
+  font-size: 10px;
+  margin-top: 5px;
+  float: right;
+  color: rgb(109, 106, 106);
+}
+.ichiran-box {
+  position: relative;
+  padding: 5% 45%;
+}
+.button {
+  position: absolute;
+  width: 150px;
+  padding: 10px 0;
+  margin: -2% -1%;
+  font-size: 15px;
+  color: rgb(223, 75, 100);
+  border-radius: 50px;
+  background-color: white;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(223, 75, 100);
+}
+
+/*【完成】会社概要*/
+.overview-box {
+  padding: 3% 25%;
+  text-align: left;
+  color: rgb(109, 106, 106);
+}
+.overview-title {
+  padding: 3% 0 0 0;
+  font-family: "Indie Flower", cursive;
+  color: rgb(223, 75, 100);
+}
+.overview-title span {
+  color: rgb(109, 106, 106);
+}
+table {
+  margin: auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+table th {
+  font-weight: bold;
+  background-color: rgb(221, 219, 219);
+}
+
+/*【完成】採用情報、社員インタビュー*/
+.interview-box {
+  padding: 3%;
+}
+.interview-contents {
+  position: relative;
+  display: flex;
+}
+
+.interview-category1 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.interview-category2 {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/*【完成】問い合わせフォーム*/
+.form {
+  width: 60%;
+  margin: 20px auto;
+}
+.form-item {
+  border-top: 1px solid #ddd;
+  padding-top: 3%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.form-item-label {
+  width: 100% 0;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0 auto 0;
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(109, 106, 106);
+}
+.practice__btn-area {
+  padding-bottom: 5%;
+}
+.line-area {
+  padding: 1%;
+}
+.line {
+  margin: 0 auto;
+  width: 3px;
+  height: 50px;
+  background-color: #ee0f98;
+}
+.practice__btn {
+  position: relative;
+  width: 250px;
+  padding: 20px 0;
+  color: #fff;
+  border-radius: 50px;
+  background: linear-gradient(90deg, rgb(223, 75, 100), hsl(320, 95%, 31%));
+  text-align: center;
+  box-shadow: 0 5px 0 rgba(255, 0, 0, 0.2);
+  margin: 0 auto 0;
+  display: block;
+  box-shadow: 0 5px 3px hsl(320, 96%, 10%);
+}
+.practice__btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  background: url(../img/mailicon.svg) no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  transform: translate(0, -50%);
+}
+
+/*【完成】フッター*/
+.footer {
+  text-align: center;
+  padding: 1% 0;
+  background-color: rgb(221, 219, 219);
+}
+.copyright {
+  font-size: 15px;
+  color: rgb(119, 117, 117);
+}
