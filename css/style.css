@@ -338,7 +338,9 @@ table th {
   position: relative;
   display: flex;
 }
-
+.interview-contents img {
+  width: 50%;
+}
 .interview-category1 {
   position: absolute;
   top: 50%;
